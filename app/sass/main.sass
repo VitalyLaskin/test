@@ -25,6 +25,23 @@ body
 		&:required:valid
 			border-color: green
 
+
+h1, h2, h3
+	text-align: center
+
+h2
+	padding-top: 20px
+	padding-bottom: 25px	
+
+table
+	text-align: center	
+
+.section_black
+	background-color: $gray-600
+	color: $white
+	h2
+		background-color: $gray-800		
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -39,5 +56,52 @@ b, strong
 	font-weight: bold
 
 
+.top-header
+	display: flex
+	background-color: $gray-600
+	height: 10vh
+	align-items: center
+	color: $white
+	a, a:hover
+		color: $white
+	a:hover
+		text-decoration: none 
+
+	
+.dostavka
+	text-align: right
+
+.boottom-header
+	display: flex
+	height: 90vh
+	align-items: center
+	img 
+		max-height: 80vh
+
+.lead
+	text-align: center
+	color: $gray-700	
+
+.kompany
+	ul
+		list-style-type: none
+		padding-top: 20px
+		padding-bottom: 20px
+	li:before
+		content: '- '	
+
+.image-galery
+	padding-left: 100px
+	padding-right: 100px
+	img
+		margin-bottom: $grid-gutter-width
+
+footer
+	text-align: center
+	a
+		color: $white
+		&:hover
+			color: $white
+			text-decoration: none	
 
 @import "media" // Always at the end
